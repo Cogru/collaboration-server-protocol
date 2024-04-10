@@ -1,5 +1,7 @@
 # collaboration-server-protocol
 
-## What is CSP?
+`collaboration-server-protocol` (CSP) is the analog to [language-server-protocol][]
 
-WIP
+<!-- Links -->
+
+[language-server-protocol]: https://github.com/microsoft/language-server-protocol

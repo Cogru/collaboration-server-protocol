@@ -1,7 +1,7 @@
 # collaboration-server-protocol
 
 `collaboration-server-protocol` (CSP) is the analog to [language-server-protocol][]
-(LSP).
+(LSP) but for the cross-editor real-time editing.
 
 
 <!-- Links -->

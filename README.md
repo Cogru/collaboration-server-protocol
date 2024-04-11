@@ -1,6 +1,8 @@
 # collaboration-server-protocol
 
 `collaboration-server-protocol` (CSP) is the analog to [language-server-protocol][]
+(LSP).
+
 
 <!-- Links -->
 

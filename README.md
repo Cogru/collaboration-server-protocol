@@ -15,6 +15,7 @@ Login to the server to get started with the collaboration services.
 {
     "method": "login",
     "password": "XXXXXX"
+    
 }
 ```
 

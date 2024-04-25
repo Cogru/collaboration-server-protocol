@@ -12,7 +12,10 @@ This section describes what request can be sent over to the server.
 Login to the server to get started with the collaboration services.
 
 ```json
-test 2
+{
+    "method": "login",
+    "password": "XXXXXX"
+}
 ```
 
 ## 📁 Similar Projects
@@ -20,6 +23,7 @@ test 2
 - [floobits](https://floobits.com/) (abandoned)
 - [tandem](https://github.com/typeintandem/tandem)
 - [duckly](https://duckly.com/) (malware?)
+
 
 <!-- Links -->
 

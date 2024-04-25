@@ -5,13 +5,13 @@
 
 ## Request
 
-This section describe what request can be sent over to the server.
+This section describes what request can be sent over to the server.
 
 ### Login Request
 
 Login to the server to get started with the collaboration services.
 
-```
+```json
 
 ```
 

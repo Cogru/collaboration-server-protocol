@@ -12,7 +12,7 @@ This section describes what request can be sent over to the server.
 Login to the server to get started with the collaboration services.
 
 ```json
-test 2
+test
 ```
 
 ## 📁 Similar Projects

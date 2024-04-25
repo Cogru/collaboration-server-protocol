@@ -3,6 +3,18 @@
 `collaboration-server-protocol` (CSP) is the analog to [language-server-protocol][]
 (LSP) but for the cross-editor real-time editing.
 
+## Request
+
+This section describe what request can be sent over to the server.
+
+### Login Request
+
+Login to the server to get started with the collaboration services.
+
+```
+
+```
+
 ## 📁 Similar Projects
 
 - [floobits](https://floobits.com/) (abandoned)

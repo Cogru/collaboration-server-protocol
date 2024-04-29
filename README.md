@@ -9,7 +9,7 @@ This section describes what request can be sent over to the server.
 
 For all requests, the field `method` is always **required**.
 
-### Create Account (Signup)
+### 📤 Create Account (Signup)
 
 Create an account before logging in.
 
@@ -28,7 +28,7 @@ Create an account before logging in.
 - `email-confirm` confirmation email
 - `password` used to log in.
 
-### Login Request
+### 📤 Login Request
 
 Login to the server to get started with the collaboration services.
 
@@ -44,7 +44,7 @@ Login to the server to get started with the collaboration services.
 - `username` and `email`; one must required and one must be an empty string.
 - `password` is required.
 
-### Logout Request
+### 📤 Logout Request
 
 Log out from the current session.
 

@@ -9,7 +9,7 @@ This section describes what request can be sent over to the server.
 
 For all requests, the field `method` is always **required**.
 
-### Create Account
+### Create Account (Signup)
 
 Create an account before logging in.
 

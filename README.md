@@ -19,7 +19,7 @@ Create an account before logging in.
     "username": "my-name",
     "email": "my.email@example.com",
     "email-confirm": "my.email@example.com",
-    "password": "XXXXXX"
+    "password": "XXXXXX",
 }
 ```
 

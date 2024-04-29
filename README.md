@@ -7,6 +7,8 @@
 
 This section describes what request can be sent over to the server.
 
+For all requests, the field `method` is always **required**.
+
 ### Login Request
 
 Login to the server to get started with the collaboration services.
@@ -19,6 +21,9 @@ Login to the server to get started with the collaboration services.
     "password": "XXXXXX"
 }
 ```
+
+- `username` and `email`; one must required and one must be empty string.
+- `password` is required.
 
 ## 📁 Similar Project
 

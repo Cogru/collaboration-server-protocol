@@ -14,15 +14,18 @@ Login to the server to get started with the collaboration services.
 ```json
 {
     "method": "login",
+    "username": "my-name",
+    "email": "my.email@example.com",
     "password": "XXXXXX"
 }
 ```
 
-## 📁 Similar Projects
+## 📁 Similar Project
 
 - [floobits](https://floobits.com/) (abandoned)
 - [tandem](https://github.com/typeintandem/tandem)
 - [duckly](https://duckly.com/) (malware?)
+
 
 
 <!-- Links -->

@@ -18,12 +18,26 @@ Login to the server to get started with the collaboration services.
     "method": "login",
     "username": "my-name",
     "email": "my.email@example.com",
-    "password": "XXXXXX"
+    "password": "XXXXXX",
 }
 ```
 
 - `username` and `email`; one must required and one must be empty string.
 - `password` is required.
+
+### Logout Request
+
+Log out from the current session.
+
+```json
+{
+    "method": "logout",
+    "username": "my-name",
+    "email": "my.email@example.com",
+}
+```
+
+- `username` and `email`; one must required and one must be empty string.
 
 ## 📁 Similar Project
 

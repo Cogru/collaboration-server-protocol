@@ -9,6 +9,25 @@ This section describes what request can be sent over to the server.
 
 For all requests, the field `method` is always **required**.
 
+### Create Account
+
+Create an account before logging in.
+
+```json
+{
+    "method": "signup",
+    "username": "my-name",
+    "email": "my.email@example.com",
+    "email-confirm": "my.email@example.com",
+    "password": "XXXXXX"
+}
+```
+
+- `username` is the unique identifier of the account
+- `email` registered email
+- `email-confirm` confirmation email
+- `password` used to log in.
+
 ### Login Request
 
 Login to the server to get started with the collaboration services.
@@ -22,7 +41,7 @@ Login to the server to get started with the collaboration services.
 }
 ```
 
-- `username` and `email`; one must required and one must be empty string.
+- `username` and `email`; one must required and one must be an empty string.
 - `password` is required.
 
 ### Logout Request
@@ -37,9 +56,9 @@ Log out from the current session.
 }
 ```
 
-- `username` and `email`; one must required and one must be empty string.
+- `username` and `email`; one must required and one must be an empty string.
 
-## 📁 Similar Project
+## 📁 Similar Projects
 
 - [floobits](https://floobits.com/) (abandoned)
 - [tandem](https://github.com/typeintandem/tandem)

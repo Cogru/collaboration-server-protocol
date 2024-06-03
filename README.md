@@ -3,7 +3,7 @@
 `collaboration-server-protocol` (CSP) is the analog to [language-server-protocol][]
 (LSP) but for the cross-editor real-time editing.
 
-## 📫 Request
+## 🏗 Specification
 
 This section describes what request can be sent over to the server.
 
@@ -25,7 +25,7 @@ Request sent when entering the room.
 - `password` is used to enter the session.
 
 <details>
-  <summary>Example response</summary>
+<summary>Example response</summary>
 
 ```json
 {
@@ -52,7 +52,7 @@ Request sent when exiting the room.
 - `username` is the unique identifier being used in the session.
 
 <details>
-  <summary>Example response</summary>
+<summary>Example response</summary>
 
 
 ```json

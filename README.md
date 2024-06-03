@@ -26,6 +26,9 @@ Request sent when entering the room.
 
 Example response,
 
+<details>
+  <summary>Example response</summary>
+
 ```json
 {
     "method": "enter",
@@ -34,6 +37,8 @@ Example response,
     "status": "success",
 }
 ```
+
+</details>
 
 ### 🚪 Exit Room
 
@@ -48,7 +53,9 @@ Request sent when exiting the room.
 
 - `username` is the unique identifier being used in the session.
 
-Example response,
+<details>
+  <summary>Example response</summary>
+
 
 ```json
 {
@@ -57,6 +64,8 @@ Example response,
     "status": "success",
 }
 ```
+
+</details>
 
 ## 📁 Similar Projects
 

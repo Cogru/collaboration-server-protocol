@@ -24,8 +24,6 @@ Request sent when entering the room.
 - `username` is the unique identifier being used in the session.
 - `password` is used to enter the session.
 
-Example response,
-
 <details>
   <summary>Example response</summary>
 

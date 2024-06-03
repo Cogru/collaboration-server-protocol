@@ -65,12 +65,6 @@ Request sent when exiting the room.
 
 </details>
 
-## 📁 Similar Projects
-
-- [floobits](https://floobits.com/) (abandoned)
-- [tandem](https://github.com/typeintandem/tandem)
-- [duckly](https://duckly.com/) (malware?)
-
 
 <!-- Links -->
 

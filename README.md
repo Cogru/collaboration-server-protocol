@@ -15,7 +15,7 @@ Request sent when entering the room.
 
 ```json
 {
-    "method": "enter",
+    "method": "room::enter",
     "username": "the-username",
     "password": "XXXXXX",
 }
@@ -29,7 +29,7 @@ Request sent when entering the room.
 
 ```json
 {
-    "method": "enter",
+    "method": "room::enter",
     "message": "You have successully entered the room",
     "username": "the-username",
     "status": "success",
@@ -44,7 +44,7 @@ Request sent when exiting the room.
 
 ```json
 {
-    "method": "exit",
+    "method": "room::exit",
     "username": "the-username",
 }
 ```
@@ -56,7 +56,7 @@ Request sent when exiting the room.
 
 ```json
 {
-    "method": "exit",
+    "method": "room::exit",
     "message": "You have successfully left the room",
     "status": "success",
 }
@@ -72,7 +72,7 @@ This message goes across the project.
 
 ```json
 {
-    "method": "broadcast",
+    "method": "room::broadcast",
     "message": "This is a broadcast message!~",
 }
 ```
@@ -84,7 +84,7 @@ This message goes across the project.
 
 ```json
 {
-    "method": "broadcast",
+    "method": "room::broadcast",
     "username:": "the-username",
     "message": "This is a broadcast message!~",
     "status": "success",

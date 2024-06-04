@@ -93,6 +93,7 @@ This message goes across the project.
 
 </details>
 
+
 <!-- Links -->
 
 [language-server-protocol]: https://github.com/microsoft/language-server-protocol

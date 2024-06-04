@@ -54,7 +54,6 @@ Request sent when exiting the room.
 <details>
 <summary>Example response</summary>
 
-
 ```json
 {
     "method": "exit",
@@ -65,6 +64,34 @@ Request sent when exiting the room.
 
 </details>
 
+### 📢 Broadcast
+
+Send a room message.
+
+This message goes across the project.
+
+```json
+{
+    "method": "broadcast",
+    "message": "This is a broadcast message!~",
+}
+```
+
+- `username` is the unique identifier being used in the session.
+
+<details>
+<summary>Example response</summary>
+
+```json
+{
+    "method": "broadcast",
+    "username:": "the-username",
+    "message": "This is a broadcast message!~",
+    "status": "success",
+}
+```
+
+</details>
 
 <!-- Links -->
 

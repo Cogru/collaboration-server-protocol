@@ -9,6 +9,27 @@ This section describes what request can be sent over to the server.
 
 For all requests, the field `method` is always **required**.
 
+### 🖥 Ping
+
+Ping the server.
+
+```json
+{
+    "method": "ping",
+}
+```
+
+<details>
+<summary>Example response</summary>
+
+```json
+{
+    "method": "pong",
+}
+```
+
+</details>
+
 ### 🖥 Initialization
 
 Initialize the client on the server.
@@ -19,6 +40,8 @@ Initialize the client on the server.
     "path": "/path/to/your/project/",  // Workspace directory
 }
 ```
+
+- `path` is the project directory to sync.
 
 <details>
 <summary>Example response</summary>

@@ -9,6 +9,30 @@ This section describes what request can be sent over to the server.
 
 For all requests, the field `method` is always **required**.
 
+### 🖥 Initialization
+
+Initialize the client on the server.
+
+```json
+{
+    "method": "init",
+    "path": "/path/to/your/project/",  // Workspace directory
+}
+```
+
+<details>
+<summary>Example response</summary>
+
+```json
+{
+    "method": "init",
+    "message": "Done initialized [/path/to/your/project/]",
+    "status": "success",
+}
+```
+
+</details>
+
 ### 🚪 Enter Room
 
 Request sent when entering the room.

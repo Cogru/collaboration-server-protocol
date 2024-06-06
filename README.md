@@ -37,7 +37,7 @@ Initialize the client on the server.
 ```json
 {
     "method": "init",
-    "path": "/path/to/your/project/",  // Workspace directory
+    "path": "{/path/to/your/project/}",  // Workspace directory
 }
 ```
 
@@ -49,7 +49,7 @@ Initialize the client on the server.
 ```json
 {
     "method": "init",
-    "message": "Done initialized [/path/to/your/project/]",
+    "message": "Done initialized [{/path/to/your/project/}]",
     "status": "success",
 }
 ```
@@ -63,8 +63,8 @@ Request sent when entering the room.
 ```json
 {
     "method": "room::enter",
-    "username": "the-username",
-    "password": "XXXXXX",
+    "username": "{username}",
+    "password": "{XXXXXX}",
 }
 ```
 
@@ -78,7 +78,7 @@ Request sent when entering the room.
 {
     "method": "room::enter",
     "message": "You have successully entered the room",
-    "username": "the-username",
+    "username": "{username}",
     "status": "success",
 }
 ```
@@ -92,7 +92,7 @@ Request sent when exiting the room.
 ```json
 {
     "method": "room::exit",
-    "username": "the-username",
+    "username": "{username}",
 }
 ```
 
@@ -105,6 +105,32 @@ Request sent when exiting the room.
 {
     "method": "room::exit",
     "message": "You have successfully left the room",
+    "status": "success",
+}
+```
+
+</details>
+
+### 🦶 Kick
+
+Request sent when kicking a user out of the room.
+
+```json
+{
+    "method": "room::kick",
+    "username": "{username}",
+}
+```
+
+- `username` is the unique identifier being used in the session.
+
+<details>
+<summary>Example response</summary>
+
+```json
+{
+    "method": "room::kick",
+    "message": "{target} has been kicked out by {you}",
     "status": "success",
 }
 ```
@@ -132,7 +158,7 @@ This message goes across the project.
 ```json
 {
     "method": "room::broadcast",
-    "username:": "the-username",
+    "username:": "{username}",
     "message": "This is a broadcast message!~",
     "status": "success",
 }

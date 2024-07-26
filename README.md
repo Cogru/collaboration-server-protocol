@@ -182,7 +182,7 @@ will need to notify other clients to update their state.
 {
     "method": "room::update_client",
     "path": "{current/file/path}",
-    "point": "1",
+    "point": 1,
     "region_beg": null,
     "region_end": null,
     "color_cursor": "#FFF",

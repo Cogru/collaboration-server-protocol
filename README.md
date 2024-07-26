@@ -39,7 +39,7 @@ Initialize the client on the server.
 ```json
 {
     "method": "init",
-    "path": "{/path/to/your/project/}",  // Workspace directory
+    "path": "{/path/to/your/project/}",
 }
 ```
 

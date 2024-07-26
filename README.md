@@ -25,6 +25,8 @@ Ping the server.
 ```json
 {
     "method": "pong",
+    "timestamp": "2024-07-26 15:29:23.284806 -07:00",
+    "status": "success",
 }
 ```
 
@@ -77,7 +79,7 @@ Request sent when entering the room.
 ```json
 {
     "method": "room::enter",
-    "message": "You have successully entered the room",
+    "message": "{username} has entered the room",
     "username": "{username}",
     "status": "success",
 }
@@ -104,7 +106,8 @@ Request sent when exiting the room.
 ```json
 {
     "method": "room::exit",
-    "message": "You have successfully left the room",
+    "message": "{username} has left the room",
+    "username": "{username}",
     "status": "success",
 }
 ```
@@ -130,7 +133,9 @@ Request sent when kicking a user out of the room.
 ```json
 {
     "method": "room::kick",
-    "message": "{target} has been kicked out by {you}",
+    "username": "{target_username}",
+    "admin": "{admin_username}",
+    "message": "{target} has been kicked out by {admin}",
     "status": "success",
 }
 ```
@@ -150,7 +155,7 @@ This message goes across the project.
 }
 ```
 
-- `username` is the unique identifier being used in the session.
+- `message` you want to say to other users in the room.
 
 <details>
 <summary>Example response</summary>
@@ -161,6 +166,43 @@ This message goes across the project.
     "username:": "{username}",
     "message": "This is a broadcast message!~",
     "status": "success",
+}
+```
+
+</details>
+
+### ✏ Update client
+
+Update a single client's information.
+
+This request should be sent every almost every state change since the server
+will need to notify other clients to update their state.
+
+```json
+{
+    "method": "room::update_client",
+    "path": "{current/file/path}",
+    "point": "1",
+    "region_beg": null,
+    "region_end": null,
+    "color_cursor": "#FFF",
+    "color_region": "#00F",
+}
+```
+
+- `path` the file path the user is currently in.
+- `point` is the cursor position (byte position).
+- `region_beg` is the beginning of the region (when active); omit or `null` if region is not active.
+- `region_beg` is the end of the region (when active); omit or `null` if region is not active.
+- `color_cursor` is the cursor color you want other clients to see. (customizable)
+- `color_region` is the region color you want other clients to see. (customizable)
+
+<details>
+<summary>Example response</summary>
+
+```json
+{
+    No response
 }
 ```
 

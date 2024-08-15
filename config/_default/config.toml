@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "Hugoplate"
-theme = "docsy"
+title = "Collaboration Server Protocol"
+theme = "hextra"
 
 

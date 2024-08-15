@@ -65,7 +65,7 @@ jobs:
         hugo \
           --gc --minify \
           --baseURL "${{ steps.pages.outputs.base_url }}/" \
-          --destination ../gh-pages
+          --destination gh-pages
 
     # TODO: Generate better commit message
     - name: Publish doc artifacts
@@ -80,4 +80,4 @@ jobs:
         SourceCommit: https://github.com/Cogru/collaboration-server-protocol/commit/${{ github.sha }}
         _UBLT_COMMIT_MSG_
         git push
-      working-directory: ../gh-pages
+      working-directory: gh-pages

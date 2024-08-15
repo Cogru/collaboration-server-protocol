@@ -21,6 +21,10 @@ development tools or a Web UI without needing a local copy of the source code.
 <a class="btn btn-lg  me-3" href="overview/">Learn More</a>
 <a class="btn btn-lg" href="docs/get-started/">Get started</a>
 
+<p class="mt-5">
+{{% blocks/link-down color="info" %}}
+</p>
+
 {{< /blocks/cover >}}
 
 

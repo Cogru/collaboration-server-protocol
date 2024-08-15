@@ -14,7 +14,12 @@ Format (LSIF, pronounced like "else if") is to support rich code navigation in
 development tools or a Web UI without needing a local copy of the source code.
 </p>
 
+<a class="github-button" href="https://github.com/Cogru/collaboration-server-protocol/subscription" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch Cogru/collaboration-server-protocol on GitHub">Watch</a>
+<a class="github-button" href="https://github.com/Cogru/collaboration-server-protocol/fork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork Cogru/collaboration-server-protocol on GitHub">Fork</a>
 <a class="github-button" href="https://github.com/Cogru/collaboration-server-protocol" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Cogru/collaboration-server-protocol on GitHub">Star</a>
+
+<a class="btn btn-lg  me-3" href="overview/">Learn More</a>
+<a class="btn btn-lg" href="docs/get-started/">Get started</a>
 
 {{< /blocks/cover >}}
 
@@ -36,18 +41,16 @@ LSP is a win for both language providers and tooling vendors!
 
 {{% blocks/section color="white" type="row" %}}
 
-{{% blocks/feature icon="fa-lightbulb" title="New chair metrics!" %}}
-The Goldydocs UI now shows chair size metrics by default.
-
-Please follow this space for updates!
+{{% blocks/feature icon="fa-gears" title="Overview" url="#" %}}
+The protocol defines the format of the messages sent using JSON-RPC between the development tool and the language server. LSIF defines a graph format to store information about programming artifacts.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-github" title="Contributions welcome!" url="https://github.com/google/docsy-example" %}}
-We do a [Pull Request](https://github.com/google/docsy-example/pulls) contributions workflow on **GitHub**. New users are always welcome!
+{{% blocks/feature icon="fa-book" title="Specification" url="#" %}}
+The latest version of the LSP specification is version 3.17. There is now also a specification for the upcoming language server index format (LSIF).
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fab fa-twitter" title="Follow us on Twitter!" url="https://twitter.com/docsydocs" %}}
-For announcement of latest features etc.
+{{% blocks/feature icon="fa-code-fork" title="Implementations" url="#" %}}
+The LSP has been implemented for many languages and many development tools are integrating these language servers.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}

@@ -1,3 +1,4 @@
+<a href="#"><img align="right" src="./etc/logo.png" width="15%"></a>
 # collaboration-server-protocol
 > Defines a common protocol for collaboration servers
 

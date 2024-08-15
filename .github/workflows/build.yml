@@ -51,6 +51,7 @@ jobs:
       with:
         repository: Cogru/collaboration-server-protocol
         path: gh-pages
+        branch: gh-pages
         token: ${{ secrets.PAT }}
 
     - name: Build with Hugo

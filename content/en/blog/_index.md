@@ -1,6 +1,6 @@
 ---
-title: Documentation
-linkTitle: Docs
+title: Implementations
+linkTitle: Implementations
 menu: {main: {weight: 20}}
 ---
 

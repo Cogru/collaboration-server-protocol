@@ -51,3 +51,8 @@ For announcement of latest features etc.
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
+
+
+<!-- Links -->
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>

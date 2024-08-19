@@ -1,5 +1,5 @@
 baseURL: /
-title: collaboration-server-protocol
+title: Official page for Collaboration Server Protocol
 enableRobotsTXT: true
 enableGitInfo: true
 
@@ -48,7 +48,7 @@ markup:
 
 params:
   copyright:
-    authors: Cogru Inc. | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+    authors: Cogru Inc.
     from_year: 
   privacy_policy: https://policies.google.com/privacy
   version_menu: Releases
@@ -108,10 +108,10 @@ params:
       #  icon: fa-brands fa-stack-overflow
       #  desc: Practical questions and curated answers
     developer:
-      - name: GitHub
-        url: https://github.com/google/docsy
-        icon: fa-brands fa-github
-        desc: Development takes place here!
+      #- name: GitHub
+      #  url: https://github.com/google/docsy
+      #  icon: fa-brands fa-github
+      #  desc: Development takes place here!
 
   plantuml:
     enable: true

@@ -7,6 +7,26 @@
 `collaboration-server-protocol` (CSP) is the analog to [language-server-protocol][]
 (LSP) but for the cross-editor real-time editing.
 
+## 🔧 Development
+
+This section describes how to make the website up and running.
+
+```sh
+# Clone this repostiory
+$ git clone https://github.com/Cogru/collaboration-server-protocol
+
+# Navigate to the project directory
+$ cd collaboration-server-protocol
+
+# Install all dependencies
+$ npm install
+
+# Run the web server
+$ hugo server
+```
+
+Now you can open the browser with the url http://localhost:1313/.
+
 ## ⚜️ License
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]

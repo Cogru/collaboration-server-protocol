@@ -7,7 +7,7 @@ title: collaboration-server-protocol
 <h1>Collaboration Server Protocol</h1>
 
 <p class="mt-5">
-The Language Server Protocol (LSP) defines the protocol used between an editor
+The Collaboration Server Protocol (CSP) defines the protocol used between an editor
 or IDE and a language server that provides language features like auto complete,
 go to definition, find all references etc. The goal of the Language Server Index
 Format (LSIF, pronounced like "else if") is to support rich code navigation in
@@ -30,7 +30,7 @@ development tools or a Web UI without needing a local copy of the source code.
 
 {{% blocks/section color="white" %}}
 
-<h2>What is the Language Server Protocol?</h2>
+<h2>What is the Collaboration Server Protocol?</h2>
 
 Adding features like auto complete, go to definition, or documentation on hover for a programming language takes significant effort. Traditionally this work had to be repeated for each development tool, as each tool provides different APIs for implementing the same feature.
 

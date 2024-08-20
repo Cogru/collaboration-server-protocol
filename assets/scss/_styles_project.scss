@@ -25,6 +25,10 @@ a:-webkit-any-link {
   text-decoration: none;
 }
 
+#td-cover-block-0 {
+  min-height: unset;
+}
+
 .text-center > .td-cover-block {
   max-width: 70%;
   margin-left: auto;

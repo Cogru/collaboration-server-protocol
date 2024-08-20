@@ -25,9 +25,9 @@ the pre-existing server, <a href="https://github.com/Cogru/cogru">Cogru</a>.
 <a class="btn btn-lg" href="#">Contribute <i class="fas fa-pencil-alt ml-2"></i></a>
 </p>
 
-<br/>
+<!-- <br/> -->
 
-{{% blocks/link-down color="info" %}}
+<!-- {{% blocks/link-down color="info" %}} -->
 
 {{< /blocks/cover >}}
 
@@ -48,21 +48,21 @@ Varius duis at consectetur lorem donec massa sapien, faucibus et molestie ac, fe
 {{% blocks/section color="white" type="row" %}}
 
 {{% blocks/feature icon="fa-gears" %}}
-<h3 class="mb-3 "><a href="/overview">Overview</a></h2>
+<h3 class="mb-3 "><a href="overview/">Overview</a></h2>
 <div class="text-start">
 The protocol defines the format of the messages sent using JSON-RPC between the development tool and the language server. LSIF defines a graph format to store information about programming artifacts.
  </div>
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-book" %}}
-<h3 class="mb-3"><a href="/docs">Specification</a></h2>
+<h3 class="mb-3"><a href="docs/">Specification</a></h2>
 <div class="text-start">
 The latest version of the LSP specification is version 3.17. There is now also a specification for the upcoming language server index format (LSIF).
  </div>
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-code-fork" %}}
-<h3 class="mb-3"><a href="/blog">Implementations</a></h2>
+<h3 class="mb-3"><a href="blog/">Implementations</a></h2>
 <div class="text-start">
 The LSP has been implemented for many languages and many development tools are integrating these language servers.
  </div>

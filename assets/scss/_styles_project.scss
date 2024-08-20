@@ -1,0 +1,46 @@
+// reduce padding for small screens
+@include media-breakpoint-down(md) {
+  .td-main {
+    main {
+      padding-top: 1rem;
+    }
+  }
+}
+
+// increase 80% content width limit for large screens
+.td-max-width-on-larger-screens {
+  @include media-breakpoint-up(lg) {
+    max-width: 90%;
+  }
+}
+
+// add border below search on small devices
+@include media-breakpoint-down(md) {
+  .td-sidebar {
+    border-bottom: 0.1rem solid $border-color;
+  }
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+.text-center > .td-cover-block {
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.td-block-padding, .td-default main section {
+  padding: 3rem 20%;
+  text-align: left;
+}
+
+.td-box .row {
+  padding-left: 0vw;
+  padding-right: 0vw;
+}
+
+footer {
+  padding: 0px 20%;
+}

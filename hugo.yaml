@@ -1,4 +1,4 @@
-baseURL: /
+baseURL: https://cogru.github.io/collaboration-server-protocol/
 title: Official page for Collaboration Server Protocol
 enableRobotsTXT: true
 enableGitInfo: true
@@ -49,7 +49,7 @@ markup:
 params:
   copyright:
     authors: Cogru Inc.
-    from_year: 
+    from_year:
   privacy_policy: https://policies.google.com/privacy
   version_menu: Releases
   archived_version: false

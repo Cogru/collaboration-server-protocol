@@ -6,7 +6,7 @@ title: collaboration-server-protocol
 
 <h1>Collaboration Server Protocol</h1>
 
-<p class="mt-5">
+<p class="mt-4">
 The Collaboration Server Protocol (CSP) specifies the protocol used between an
 editor or IDE and a server that offers collaboration features such as
 interactive chat bubbles, parallel editing, and more. Unlike the
@@ -14,15 +14,15 @@ interactive chat bubbles, parallel editing, and more. Unlike the
 , there is no need to implement the server based on the specific features of
 each programming language. Instead, you implement the client to interact with
 the pre-existing server, <a href="https://github.com/Cogru/cogru">Cogru</a>.
-</p>
 
-<p class="mt-5">
+<p class="mt-4">
 <a class="github-button" href="https://github.com/Cogru/collaboration-server-protocol/subscription" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch Cogru/collaboration-server-protocol on GitHub">Watch</a>
 <a class="github-button" href="https://github.com/Cogru/collaboration-server-protocol/fork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork Cogru/collaboration-server-protocol on GitHub">Fork</a>
 <a class="github-button" href="https://github.com/Cogru/collaboration-server-protocol" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Cogru/collaboration-server-protocol on GitHub">Star</a>
 
 <a class="btn btn-lg  me-3" href="docs/get-started/">Get started <i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
 <a class="btn btn-lg" href="#">Contribute <i class="fas fa-pencil-alt ml-2"></i></a>
+</p>
 </p>
 
 <!-- <br/> -->
@@ -37,8 +37,9 @@ the pre-existing server, <a href="https://github.com/Cogru/cogru">Cogru</a>.
 
 <div class="w-10">
 <h2>What is the Collaboration Server Protocol?</h2>
-
-Varius duis at consectetur lorem donec massa sapien, faucibus et molestie ac, feugiat sed lectus vestibulum mattis? Sit amet justo donec enim diam, vulputate ut pharetra sit amet, aliquam id.
+<p class="mt-4">
+WIP.
+</p>
 </div>
 
 {{% /blocks/section %}}

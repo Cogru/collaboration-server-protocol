@@ -21,6 +21,22 @@
   }
 }
 
+footer {
+  padding: 0px 20%;
+  min-height: auto;
+
+  p {
+    margin-bottom: 0.4rem;
+    line-height: 1.0rem;
+  }
+
+  small {
+    font-size: 0.8rem;
+  }
+}
+
+/* Custom */
+
 a:-webkit-any-link {
   text-decoration: none;
 }
@@ -43,8 +59,4 @@ a:-webkit-any-link {
 .td-box .row {
   padding-left: 0vw;
   padding-right: 0vw;
-}
-
-footer {
-  padding: 0px 20%;
 }

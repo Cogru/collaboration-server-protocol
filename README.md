@@ -9,6 +9,12 @@
 
 ## 🔧 Development
 
+You will need the following tools before setting up the project environment.
+
+- [Node.js][]
+- [Hugo][]
+- [Go][]
+
 This section describes how to make the website up and running.
 
 ```sh
@@ -44,3 +50,7 @@ This work is licensed under a
 [cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
 
 [language-server-protocol]: https://github.com/microsoft/language-server-protocol
+
+[Node.js]: https://nodejs.org/
+[Hugo]: https://gohugo.io/
+[Go]: https://go.dev/

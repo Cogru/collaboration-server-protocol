@@ -9,13 +9,15 @@
 
 ## 🔧 Development
 
+This section describes how to make the website up and running.
+
 You will need the following tools before setting up the project environment.
 
 - [Node.js][]
 - [Hugo][]
 - [Go][]
 
-This section describes how to make the website up and running.
+Input these commands to set up the project.
 
 ```sh
 # Clone this repostiory

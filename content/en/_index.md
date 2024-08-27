@@ -7,13 +7,16 @@ title: collaboration-server-protocol
 <h1>Collaboration Server Protocol</h1>
 
 <p class="mt-4">
+<div id="cover-text">
 The Collaboration Server Protocol (CSP) specifies the protocol used between an
 editor or IDE and a server that offers collaboration features such as
 interactive chat bubbles, parallel editing, and more. Unlike the
 <a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a>
-, there is no need to implement the server based on the specific features of
-each programming language. Instead, you implement the client to interact with
-the pre-existing server, <a href="https://github.com/Cogru/cogru">Cogru</a>.
+, there is no need to implement the collaboration server based on the specific
+features of each programming language. Instead, you implement the client to
+interact with the pre-existing server,
+<a href="https://github.com/Cogru/cogru">Cogru</a>.
+</div>
 
 <p class="mt-4">
 <a class="github-button" href="https://github.com/Cogru/collaboration-server-protocol/subscription" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch Cogru/collaboration-server-protocol on GitHub">Watch</a>
@@ -38,7 +41,24 @@ the pre-existing server, <a href="https://github.com/Cogru/cogru">Cogru</a>.
 <div class="w-10">
 <h2>What is the Collaboration Server Protocol?</h2>
 <p class="mt-4">
-WIP.
+<div id="wicsp-container">
+<div id="wicsp-box-0">
+Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Vel facilisis volutpat, est velit egestas dui, id ornare arcu odio ut sem nulla pharetra diam sit amet nisl suscipit.
+</div>
+
+<div id="wicsp-box-1" class="slideshow-container">
+  <div class="slide fade">
+    <img width="110%" src="1.png"/>
+  </div>
+  <div class="slide fade">
+    <img width="110%" src="1.png"/>
+  </div>
+  <div class="slide fade">
+    <img width="110%" src="1.png"/>
+  </div>
+</div>
+
+</div>
 </p>
 </div>
 
@@ -51,22 +71,22 @@ WIP.
 {{% blocks/feature icon="fa-gears" %}}
 <h3 class="mb-3 "><a href="overview/">Overview</a></h2>
 <div class="text-start">
-The protocol defines the format of the messages sent using JSON-RPC between the development tool and the language server. LSIF defines a graph format to store information about programming artifacts.
- </div>
+WIP.
+</div>
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-book" %}}
 <h3 class="mb-3"><a href="docs/">Specification</a></h2>
 <div class="text-start">
-The latest version of the LSP specification is version 3.17. There is now also a specification for the upcoming language server index format (LSIF).
- </div>
+WIP.
+</div>
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-code-fork" %}}
 <h3 class="mb-3"><a href="blog/">Implementations</a></h2>
 <div class="text-start">
-The LSP has been implemented for many languages and many development tools are integrating these language servers.
- </div>
+WIP.
+</div>
 
 {{% /blocks/feature %}}
 
@@ -76,3 +96,4 @@ The LSP has been implemented for many languages and many development tools are i
 <!-- Links -->
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>
+<script async defer src="./main.js"></script>

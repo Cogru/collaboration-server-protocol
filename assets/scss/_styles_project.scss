@@ -45,6 +45,11 @@ a:-webkit-any-link {
   min-height: unset;
 }
 
+#cover-text {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 .text-center > .td-cover-block {
   max-width: 70%;
   margin-left: auto;
@@ -52,11 +57,59 @@ a:-webkit-any-link {
 }
 
 .td-block-padding, .td-default main section {
-  padding: 3rem 20%;
+  padding: 3rem 12%;
   text-align: left;
 }
 
 .td-box .row {
   padding-left: 0vw;
   padding-right: 0vw;
+}
+
+#wicsp-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#wicsp-box-0 {
+  flex: 1 1 55%;
+  padding-right: 25px;
+}
+
+#wicsp-box-1 {
+  flex: 1 1 44%;
+}
+
+/* Slideshow */
+
+.slide {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 7s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
 }

@@ -35,7 +35,7 @@ $ hugo server
 
 Now you can open the browser with the url http://localhost:1313/.
 
-## ⚜️ License
+## ⚜ License
 
 Shield: [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 

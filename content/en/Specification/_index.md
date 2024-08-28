@@ -1,7 +1,15 @@
----
-title: Specification
-menu: {main: {weight: 20}}
----
++++
+title = "Specification"
+description = ""
+
+[[cascade]]
+type = "docs"
+
+[menu.main]
+weight = 300
+pre = "<i class='fa-solid fa-pencil'></i>"
++++
+
 
 {{% pageinfo %}}
 This section describes what request can be sent over to the server.

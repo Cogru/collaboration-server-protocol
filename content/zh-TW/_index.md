@@ -1,214 +1,99 @@
-# collaboration-server-protocol
+---
+title: collaboration-server-protocol
+---
 
-`collaboration-server-protocol` (CSP) is the analog to [language-server-protocol][]
-(LSP) but for the cross-editor real-time editing.
+{{< blocks/cover title="" image_anchor="top" >}}
 
-## 🏗 Specification
+<h1>Collaboration Server Protocol</h1>
 
-This section describes what request can be sent over to the server.
+<p class="mt-4">
+<div id="cover-text">
+The Collaboration Server Protocol (CSP) specifies the protocol used between an
+editor or IDE and a server that offers collaboration features such as
+interactive chat bubbles, parallel editing, and more. Unlike the
+<a href="https://microsoft.github.io/language-server-protocol/">Language Server Protocol (LSP)</a>
+, there is no need to implement the collaboration server based on the specific
+features of each programming language. Instead, you implement the client to
+interact with the pre-existing server,
+<a href="https://github.com/Cogru/cogru">Cogru</a>.
+</div>
 
-For all requests, the field `method` is always **required**.
+<p class="mt-4">
+<a class="github-button" href="https://github.com/Cogru/collaboration-server-protocol/subscription" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-eye" data-size="large" data-show-count="true" aria-label="Watch Cogru/collaboration-server-protocol on GitHub">Watch</a>
+<a class="github-button" href="https://github.com/Cogru/collaboration-server-protocol/fork" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork Cogru/collaboration-server-protocol on GitHub">Fork</a>
+<a class="github-button" href="https://github.com/Cogru/collaboration-server-protocol" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Cogru/collaboration-server-protocol on GitHub">Star</a>
 
-### 🖥 Ping
+<a class="btn btn-lg  me-3" href="docs/get-started/">Get started <i class="fas fa-arrow-alt-circle-right ml-2"></i></a>
+<a class="btn btn-lg" href="#">Contribute <i class="fas fa-pencil-alt ml-2"></i></a>
+</p>
+</p>
 
-Ping the server.
+<!-- <br/> -->
 
-```json
-{
-    "method": "ping",
-}
-```
+<!-- {{% blocks/link-down color="info" %}} -->
 
-<details>
-<summary>Example response</summary>
+{{< /blocks/cover >}}
 
-```json
-{
-    "method": "pong",
-    "timestamp": "2024-07-26 15:29:23.284806 -07:00",
-    "status": "success",
-}
-```
+<!-- Middle -->
 
-</details>
+{{% blocks/section color="white" %}}
 
-### 🖥 Initialization
+<div class="w-10">
+<h2>What is the Collaboration Server Protocol?</h2>
+<p class="mt-4">
+<div id="wicsp-container">
+<div id="wicsp-box-0">
+Porttitor rhoncus dolor purus non enim praesent elementum facilisis leo. Vel facilisis volutpat, est velit egestas dui, id ornare arcu odio ut sem nulla pharetra diam sit amet nisl suscipit.
+</div>
 
-Initialize the client on the server.
+<div id="wicsp-box-1" class="slideshow-container">
+  <div class="slide fade">
+    <img width="110%" src="1.png"/>
+  </div>
+  <div class="slide fade">
+    <img width="110%" src="1.png"/>
+  </div>
+  <div class="slide fade">
+    <img width="110%" src="1.png"/>
+  </div>
+</div>
 
-```json
-{
-    "method": "init",
-    "path": "{/path/to/your/project/}",
-}
-```
+</div>
+</p>
+</div>
 
-- `path` is the project directory to sync.
+{{% /blocks/section %}}
 
-<details>
-<summary>Example response</summary>
+<!-- Last -->
 
-```json
-{
-    "method": "init",
-    "message": "Done initialized [{/path/to/your/project/}]",
-    "status": "success",
-}
-```
+{{% blocks/section color="white" type="row" %}}
 
-</details>
+{{% blocks/feature icon="fa-gears" %}}
+<h3 class="mb-3 "><a href="overview/">Overview</a></h2>
+<div class="text-start">
+WIP.
+</div>
+{{% /blocks/feature %}}
 
-### 🚪 Enter Room
+{{% blocks/feature icon="fa-book" %}}
+<h3 class="mb-3"><a href="docs/">Specification</a></h2>
+<div class="text-start">
+WIP.
+</div>
+{{% /blocks/feature %}}
 
-Request sent when entering the room.
+{{% blocks/feature icon="fa-code-fork" %}}
+<h3 class="mb-3"><a href="blog/">Implementations</a></h2>
+<div class="text-start">
+WIP.
+</div>
 
-```json
-{
-    "method": "room::enter",
-    "username": "{username}",
-    "password": "{XXXXXX}",
-}
-```
+{{% /blocks/feature %}}
 
-- `username` is the unique identifier being used in the session.
-- `password` is used to enter the session.
-
-<details>
-<summary>Example response</summary>
-
-```json
-{
-    "method": "room::enter",
-    "message": "{username} has entered the room",
-    "username": "{username}",
-    "status": "success",
-}
-```
-
-</details>
-
-### 🚪 Exit Room
-
-Request sent when exiting the room.
-
-```json
-{
-    "method": "room::exit",
-    "username": "{username}",
-}
-```
-
-- `username` is the unique identifier being used in the session.
-
-<details>
-<summary>Example response</summary>
-
-```json
-{
-    "method": "room::exit",
-    "message": "{username} has left the room",
-    "username": "{username}",
-    "status": "success",
-}
-```
-
-</details>
-
-### 🦶 Kick
-
-Request sent when kicking a user out of the room.
-
-```json
-{
-    "method": "room::kick",
-    "username": "{username}",
-}
-```
-
-- `username` is the unique identifier being used in the session.
-
-<details>
-<summary>Example response</summary>
-
-```json
-{
-    "method": "room::kick",
-    "username": "{target_username}",
-    "admin": "{admin_username}",
-    "message": "{target} has been kicked out by {admin}",
-    "status": "success",
-}
-```
-
-</details>
-
-### 📢 Broadcast
-
-Send a room message.
-
-This message goes across the project.
-
-```json
-{
-    "method": "room::broadcast",
-    "message": "This is a broadcast message!~",
-}
-```
-
-- `message` you want to say to other users in the room.
-
-<details>
-<summary>Example response</summary>
-
-```json
-{
-    "method": "room::broadcast",
-    "username:": "{username}",
-    "message": "This is a broadcast message!~",
-    "status": "success",
-}
-```
-
-</details>
-
-### ✏ Update client
-
-Update a single client's information.
-
-This request should be sent every almost every state change since the server
-will need to notify other clients to update their state.
-
-```json
-{
-    "method": "room::update_client",
-    "path": "{current/file/path}",
-    "point": 1,
-    "region_beg": null,
-    "region_end": null,
-    "color_cursor": "#FFF",
-    "color_region": "#00F",
-}
-```
-
-- `path` the file path the user is currently in.
-- `point` is the cursor position (byte position).
-- `region_beg` is the beginning of the region (when active); omit or `null` if region is not active.
-- `region_beg` is the end of the region (when active); omit or `null` if region is not active.
-- `color_cursor` is the cursor color you want other clients to see. (customizable)
-- `color_region` is the region color you want other clients to see. (customizable)
-
-<details>
-<summary>Example response</summary>
-
-```json
-{
-    No response
-}
-```
-
-</details>
+{{% /blocks/section %}}
 
 
 <!-- Links -->
 
-[language-server-protocol]: https://github.com/microsoft/language-server-protocol
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script async defer src="./main.js"></script>

@@ -1,6 +1,5 @@
 ---
 title: Ping
-menu: {main: {weight: 20}}
 ---
 
 Ping the server.

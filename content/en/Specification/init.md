@@ -1,5 +1,5 @@
 ---
-title: Initialization
+title: init
 ---
 
 Initialize the client on the server.
@@ -7,7 +7,7 @@ Initialize the client on the server.
 ```json
 {
     "method": "init",
-    "path": "{/path/to/your/project/}",
+    "path": <path>,
 }
 ```
 
@@ -19,7 +19,7 @@ Initialize the client on the server.
 ```json
 {
     "method": "init",
-    "message": "Done initialized [{/path/to/your/project/}]",
+    "message": <string>,
     "status": "success",
 }
 ```

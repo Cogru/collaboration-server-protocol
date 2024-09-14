@@ -1,5 +1,5 @@
 ---
-title: Exit Room
+title: room::exit
 ---
 
 Request sent when exiting the room.
@@ -7,7 +7,7 @@ Request sent when exiting the room.
 ```json
 {
     "method": "room::exit",
-    "username": "{username}",
+    "username": <string>,
 }
 ```
 
@@ -19,8 +19,8 @@ Request sent when exiting the room.
 ```json
 {
     "method": "room::exit",
-    "message": "{username} has left the room",
-    "username": "{username}",
+    "message": <string>,
+    "username": <string>,
     "status": "success",
 }
 ```

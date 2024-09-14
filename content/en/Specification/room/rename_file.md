@@ -1,5 +1,5 @@
 ---
-title: Rename File
+title: room::rename_file
 ---
 
 Request to rename a existing file.
@@ -7,8 +7,8 @@ Request to rename a existing file.
 ```json
 {
     "method": "room::rename_file",
-    "file": "{filename}",
-    "newname": "{newname}",
+    "file": <path>,
+    "newname": <path>,
 }
 ```
 
@@ -21,8 +21,8 @@ Request to rename a existing file.
 ```json
 {
     "method": "room::rename_file",
-    "file": "The target filename",
-    "newname": "The new filename",
+    "file": <path>,
+    "newname": <path>,
     "status": "success",
 }
 ```

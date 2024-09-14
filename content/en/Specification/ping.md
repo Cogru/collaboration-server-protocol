@@ -1,5 +1,5 @@
 ---
-title: Ping
+title: ping
 ---
 
 Ping the server.
@@ -16,7 +16,7 @@ Ping the server.
 ```json
 {
     "method": "pong",
-    "timestamp": "2024-07-26 15:29:23.284806 -07:00",
+    "timestamp": <timestamp>,
     "status": "success",
 }
 ```

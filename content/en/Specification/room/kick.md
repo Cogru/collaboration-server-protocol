@@ -1,5 +1,5 @@
 ---
-title: Kick
+title: room::kick
 ---
 
 Request sent when kicking a user out of the room.
@@ -7,7 +7,7 @@ Request sent when kicking a user out of the room.
 ```json
 {
     "method": "room::kick",
-    "username": "{username}",
+    "username": <string>,
 }
 ```
 
@@ -19,9 +19,9 @@ Request sent when kicking a user out of the room.
 ```json
 {
     "method": "room::kick",
-    "username": "{target_username}",
-    "admin": "{admin_username}",
-    "message": "{target} has been kicked out by {admin}",
+    "username": <string>,
+    "admin": <string>,
+    "message": <string>,
     "status": "success",
 }
 ```

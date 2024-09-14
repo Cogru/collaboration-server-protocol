@@ -1,5 +1,5 @@
 ---
-title: Broadcast
+title: room::broadcast
 ---
 
 Send a room message.
@@ -9,7 +9,7 @@ This message goes across the project.
 ```json
 {
     "method": "room::broadcast",
-    "message": "This is a broadcast message!~",
+    "message": <string>
 }
 ```
 
@@ -21,8 +21,8 @@ This message goes across the project.
 ```json
 {
     "method": "room::broadcast",
-    "username:": "{username}",
-    "message": "This is a broadcast message!~",
+    "username:": <string>,
+    "message": <string>,
     "status": "success",
 }
 ```

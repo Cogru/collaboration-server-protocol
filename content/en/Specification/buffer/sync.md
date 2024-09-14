@@ -1,12 +1,12 @@
 ---
-title: room::add_file
+title: buffer::sync
 ---
 
-Request to add a file.
+Request to synce the buffer.
 
 ```json
 {
-    "method": "room::add_file",
+    "method": "buffer::sync",
     "file": <path>,
 }
 ```
@@ -18,11 +18,14 @@ Request to add a file.
 
 ```json
 {
-    "method": "room::add_file",
+    "method": "buffer::sync",
     "file": <path>,
     "contents": <string>,
     "status": "success",
 }
 ```
+
+The client will overwrite the buffer view (if exists).
+Otherwise, write to the local storage.
 
 </details>

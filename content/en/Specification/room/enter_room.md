@@ -1,5 +1,5 @@
 ---
-title: Enter Room
+title: room::enter
 ---
 
 Request sent when entering the room.
@@ -7,8 +7,8 @@ Request sent when entering the room.
 ```json
 {
     "method": "room::enter",
-    "username": "{username}",
-    "password": "{XXXXXX}",
+    "username": <string>,
+    "password": <string>,
 }
 ```
 
@@ -21,8 +21,8 @@ Request sent when entering the room.
 ```json
 {
     "method": "room::enter",
-    "message": "{username} has entered the room",
-    "username": "{username}",
+    "message": <string>,
+    "username": <string>,
     "status": "success",
 }
 ```

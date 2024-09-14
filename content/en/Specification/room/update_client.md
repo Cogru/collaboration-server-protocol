@@ -1,5 +1,5 @@
 ---
-title: Update Client
+title: room::update_client
 ---
 
 Update a single client's information.
@@ -10,12 +10,12 @@ will need to notify other clients to update their state.
 ```json
 {
     "method": "room::update_client",
-    "path": "{current/file/path}",
-    "point": 1,
-    "region_beg": null,
-    "region_end": null,
-    "color_cursor": "#FFF",
-    "color_region": "#00F",
+    "path": <path>,
+    "point": <number>,
+    "region_beg": <number>,
+    "region_end": <number>,
+    "color_cursor": <color>,
+    "color_region": <color>,
 }
 ```
 

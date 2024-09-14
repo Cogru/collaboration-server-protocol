@@ -1,5 +1,5 @@
 ---
-title: Delete File
+title: room::delete_file
 ---
 
 Request to delete a file.
@@ -7,7 +7,7 @@ Request to delete a file.
 ```json
 {
     "method": "room::delete_file",
-    "file": "{filename}",
+    "file": <path>,
 }
 ```
 
@@ -19,7 +19,7 @@ Request to delete a file.
 ```json
 {
     "method": "room::delete_file",
-    "file": "The file relative path",
+    "file": <path>,
     "status": "success",
 }
 ```

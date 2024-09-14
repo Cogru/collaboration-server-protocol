@@ -1,5 +1,5 @@
 ---
-title: cogru.el
+title: cogru.el (Emacs)
 ---
 
 [Cogru][] plugin for [Emacs][].

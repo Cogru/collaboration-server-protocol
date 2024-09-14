@@ -1,5 +1,5 @@
 ---
-title: Update client
+title: Update Client
 ---
 
 Update a single client's information.

@@ -25,5 +25,3 @@ Request to delete a file.
 ```
 
 </details>
-
-
